@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Your birthday</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function keyPressed(){
+        var key = event.keyCode || event.charCode || event.which ;
+        return key;
+        }
+        function onSubmit() {
+            var values = document.getElementById('password').value;
+            console.log(values.toLowerCase())
+            if ( values.toLowerCase() == 'happybirthday') {window.location.href = 'https://drive.google.com/drive/folders/1Bd5PUsYSJTlZ8AXd6nFQdBsk32B0OFH3?usp=sharing'; }else{ alert('ركزي');}
+        }
+        </script>
+    <div class="birthdaycard">
+
+        <div class="cardfront">
+        <h3 class="happy">Happy Birthday!</h3>
+        
+        <div class="balloons">
+        
+        <div class="balloon1"></div>
+        
+        <div class="balloon2"></div>
+        
+        <div class="balloon3"></div>
+        
+        <div class="balloon4"></div>
+        
+        </div><!-- end balloons -->
+        
+        </div><!-- end cardfront -->
+        
+        <div class="cardinside">
+        <h3 class="back">HAPPY BIRTHDAY!</h3>
+        <p>Dear Meja the Witch,</p>
+        <p>
+            Happy Birthday! </br> I hope you will have a life full of craziness adrenaline and sugaar. Stay safe till it will be time for me to kill you.
+        </p>
+        <p class="name">Youno</p>
+        </div><!-- end cardinside -->
+        
+        </div><!-- end birthdaycard -->
+
+    <fieldset class="field">
+        <div class="hero-form" action="#">
+            <div class="row-fluid">
+                <h3 class="Passheader">Enter your password</h3>
+                <input type="text" name="password" class="span7" id="password" placeholder="e.g. IAMAPASSWORD"  onKeyDown="javascript: var keycode = keyPressed(event); if(keycode==32){ return false;} if(keycode==13) {return onSubmit()} " required/>
+            </div>    
+        <div>
+        <div class="hero-form">
+            <button class="btn btn-info btn-large span5" id="joe_btn"  onclick="onSubmit()">Enter</button>
+        </div>
+        
+    </fieldset>
+    
+</body>
+</html>
