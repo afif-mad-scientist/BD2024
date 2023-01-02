@@ -8,12 +8,8 @@
     <title>Your birthday</title>
     
 </head>
-<body onload="autoNotify()">
-  <audio id="foobar">
-    <source src="sound.mp3" type="audio/mp3"> 
-    <source src="sound.ogg" type="audio/ogg"> 
-  </audio> 
-    
+<body>
+
     <script type="text/javascript">
         function keyPressed(){
         var key = event.keyCode || event.charCode || event.which ;
@@ -22,7 +18,7 @@
         function onSubmit() {
             var values = document.getElementById('password').value;
             console.log(values.toLowerCase())
-            if ( values.toLowerCase() == 'happybirthday') {window.location.href = 'https://drive.google.com/drive/folders/1Bd5PUsYSJTlZ8AXd6nFQdBsk32B0OFH3?usp=sharing'; }else{ alert('ركزي');}
+            if ( values.toLowerCase() == 'happymeya') {window.location.href = 'https://drive.google.com/drive/folders/1Bd5PUsYSJTlZ8AXd6nFQdBsk32B0OFH3?usp=sharing'; }else{ alert('ركزي');}
         }
         </script>
 
@@ -53,6 +49,9 @@
             <p>Dear Meja the Witch,</p>
             <p>
                 Happy Birthday! </br> I hope you will have a life full of craziness adrenaline and sugaar. Stay safe till it will be time for me to kill you.
+              </p>
+              <p class="morse">
+                .... .- .--. .--. -.-- -- . -.-- .-
             </p>
             <p class="name">Youno</p>
             </div><!-- end cardinside -->
@@ -74,11 +73,6 @@
     </div>
 
     <script>
-      var popupsound = document.getElementById("foobar");
-
-function autoNotify() {
-   popupsound.play(); //play the audio file
-}
       const balloonContainer = document.getElementById("balloon-container");
 
 function random(num) {
