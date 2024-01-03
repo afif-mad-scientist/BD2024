@@ -165,7 +165,7 @@ body {
 	margin-top: -22%; /* Negative half of height. */
 	margin-left: calc(-60%*3/4/2); /* Negative half of width. */
   float: left;
-  perspective: 500px;
+  perspective: 10000px;
 }
 
 .content {
@@ -178,7 +178,7 @@ body {
   transform-style: preserve-3d;
 }
 
-.card:hover .content {
+.card:active .content {
   transform: rotateY( 180deg ) ;
   transition: transform 0.5s;
 }
